@@ -1,0 +1,56 @@
+.number-picker {
+  @numbre-picker-content-height: 80px;
+  @numbre-picker-content-width: 200px;
+  @numbre-picker-controllers-width: 40px;
+  @numbre-picker-input-width: 120px;
+
+  display: flex;
+  justify-content: flex-end;
+
+  height: @numbre-picker-content-height;
+  width: @numbre-picker-content-width;
+
+  font-size: 48px;
+  text-align: center;
+
+  background-color: white;
+  box-shadow: 1px 2px black;
+
+  &__modifier {
+    flex-basis: @numbre-picker-controllers-width;
+    box-sizing: border-box;
+    padding: 5px 0;
+
+    border: 1px solid black;
+    border-right: none;
+
+    color: black;
+    cursor: pointer;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:last-child {
+      border-left: none;
+      border-right: 1px solid black;
+    }
+  }
+
+  &__input {
+    flex-basis: @numbre-picker-input-width;
+    box-sizing: border-box;
+
+    border: 1px solid black;
+    vertical-align: top;
+
+    font-size: inherit;
+    text-align: center;
+  }
+}
+.number-picker {
+  
+}
